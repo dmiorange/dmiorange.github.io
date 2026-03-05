@@ -17,10 +17,11 @@ buildings.forEach((b, i) => {
 
 
 // ── Page navigation ──
-const pages    = document.querySelectorAll('.page');
-const navLinks = document.querySelectorAll('nav a[data-page]');
+const pages     = document.querySelectorAll('.page');
+const navLinks  = document.querySelectorAll('nav a[data-page]');
+const pageLinks = document.querySelectorAll('a[data-page]');
 
-navLinks.forEach(link => {
+pageLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = link.getAttribute('data-page');
@@ -29,6 +30,18 @@ navLinks.forEach(link => {
       page.classList.toggle('visible', page.id === target);
     });
 
-    navLinks.forEach(l => l.classList.toggle('active', l === link));
+    if (link.closest('nav')) {
+      // Direct nav click: activate that tab
+      navLinks.forEach(l => l.classList.toggle('active', l === link));
+    } else {
+      // Internal page link (e.g. writing detail): keep nav in sync with section
+      const section = link.getAttribute('data-section');
+      if (section) {
+        navLinks.forEach(l => {
+          const navTarget = l.getAttribute('data-page');
+          l.classList.toggle('active', navTarget === section);
+        });
+      }
+    }
   });
 });
