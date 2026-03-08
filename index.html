@@ -2,35 +2,630 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dmitriy Oranskiy - Student</title>
-  <link rel="icon" href="https://ih1.redbubble.net/image.5045592337.8214/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" type="image/jpeg">
-  <!-- Google Fonts substitute for Neue Montreal -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dmitriy Oranskiy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="letter-d.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <div class="logo">D—O</div>
-      <div class="content">
-        <div class="bio">
-          Dmitriy is studying to become an EECS/CS student
+
+  <nav>
+    <a class="active" data-page="home">Home</a>
+    <a data-page="projects">Projects</a>
+    <a data-page="writings">Writings</a>
+    <a data-page="contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ══ HOME ══ -->
+    <div id="home" class="page visible">
+
+      <div class="skyline-wrap">
+        <svg id="skyline-svg" viewBox="0 0 680 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+
+          <!-- Background haze -->
+          <g opacity="0.15" fill="#8a857e">
+            <rect x="30"  y="130" width="18" height="50"/>
+            <rect x="55"  y="118" width="14" height="62"/>
+            <rect x="76"  y="124" width="20" height="56"/>
+            <rect x="588" y="122" width="16" height="58"/>
+            <rect x="610" y="108" width="22" height="72"/>
+            <rect x="638" y="120" width="15" height="60"/>
+          </g>
+
+          <!-- LEFT small -->
+          <g class="building">
+            <rect x="18"  y="132" width="26" height="48" fill="#c0bbb4"/>
+            <rect x="22"  y="128" width="6"  height="5"  fill="#c0bbb4"/>
+            <rect x="23"  y="140" width="6"  height="6"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="33"  y="140" width="6"  height="6"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="23"  y="153" width="6"  height="6"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="33"  y="153" width="6"  height="6"  fill="#f7f5f2" opacity="0.55"/>
+          </g>
+
+          <!-- LEFT mid -->
+          <g class="building">
+            <rect x="52"  y="104" width="36" height="76" fill="#bab5ae"/>
+            <rect x="57"  y="98"  width="26" height="8"  fill="#bab5ae"/>
+            <rect x="61"  y="91"  width="18" height="9"  fill="#bab5ae"/>
+            <rect x="65"  y="85"  width="10" height="8"  fill="#bab5ae"/>
+            <rect x="58"  y="114" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="70"  y="114" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="58"  y="128" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="70"  y="128" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="58"  y="142" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="70"  y="142" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="58"  y="156" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="70"  y="156" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <!-- LEFT stepped tower -->
+          <g class="building">
+            <rect x="96"  y="76"  width="48" height="104" fill="#b2ada6"/>
+            <rect x="101" y="62"  width="38" height="16"  fill="#b2ada6"/>
+            <rect x="107" y="50"  width="26" height="14"  fill="#b2ada6"/>
+            <rect x="113" y="40"  width="14" height="12"  fill="#b2ada6"/>
+            <rect x="117" y="30"  width="6"  height="12"  fill="#b2ada6"/>
+            <rect x="119" y="18"  width="2"  height="13"  fill="#b2ada6"/>
+            <rect x="103" y="86"  width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="116" y="86"  width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="129" y="86"  width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="103" y="101" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="116" y="101" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="129" y="101" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="103" y="116" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="116" y="116" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="129" y="116" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="103" y="131" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="116" y="131" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="129" y="131" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="103" y="146" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="116" y="146" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+            <rect x="129" y="146" width="8"  height="8"   fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="152" y="116" width="28" height="64" fill="#c6c1ba"/>
+            <rect x="156" y="110" width="20" height="8"  fill="#c6c1ba"/>
+            <rect x="157" y="124" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="168" y="124" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="157" y="138" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="168" y="138" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="157" y="152" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="168" y="152" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <!-- CENTER HERO — Empire State style -->
+          <g class="building">
+            <rect x="192" y="86"  width="58" height="94" fill="#aaa5a0"/>
+            <rect x="198" y="70"  width="46" height="18" fill="#aaa5a0"/>
+            <rect x="205" y="55"  width="32" height="17" fill="#aaa5a0"/>
+            <rect x="211" y="42"  width="20" height="15" fill="#aaa5a0"/>
+            <rect x="216" y="30"  width="10" height="14" fill="#aaa5a0"/>
+            <rect x="219" y="18"  width="4"  height="14" fill="#aaa5a0"/>
+            <rect x="221" y="6"   width="2"  height="13" fill="#aaa5a0"/>
+            <rect x="199" y="96"  width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="213" y="96"  width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="227" y="96"  width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="241" y="96"  width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="199" y="112" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="213" y="112" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="227" y="112" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="241" y="112" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="199" y="128" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="213" y="128" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="227" y="128" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="241" y="128" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="199" y="144" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="213" y="144" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="227" y="144" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="241" y="144" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="199" y="160" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="213" y="160" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="227" y="160" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+            <rect x="241" y="160" width="9"  height="9"  fill="#f7f5f2" opacity="0.55"/>
+          </g>
+
+          <g class="building">
+            <rect x="258" y="110" width="30" height="70" fill="#c0bbb4"/>
+            <rect x="262" y="104" width="22" height="8"  fill="#c0bbb4"/>
+            <rect x="265" y="98"  width="16" height="8"  fill="#c0bbb4"/>
+            <rect x="263" y="120" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="275" y="120" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="263" y="134" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="275" y="134" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="263" y="148" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="275" y="148" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="263" y="162" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="275" y="162" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <!-- CENTER-RIGHT tall -->
+          <g class="building">
+            <rect x="297" y="92"  width="50" height="88" fill="#b0aba4"/>
+            <rect x="303" y="78"  width="38" height="16" fill="#b0aba4"/>
+            <rect x="309" y="65"  width="26" height="15" fill="#b0aba4"/>
+            <rect x="315" y="54"  width="14" height="13" fill="#b0aba4"/>
+            <rect x="319" y="43"  width="6"  height="13" fill="#b0aba4"/>
+            <rect x="321" y="31"  width="2"  height="14" fill="#b0aba4"/>
+            <rect x="303" y="102" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="317" y="102" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="331" y="102" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="303" y="118" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="317" y="118" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="331" y="118" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="303" y="134" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="317" y="134" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="331" y="134" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="303" y="150" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="317" y="150" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="331" y="150" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="303" y="165" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="317" y="165" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="331" y="165" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="355" y="118" width="24" height="62" fill="#c4bfb8"/>
+            <rect x="359" y="113" width="16" height="7"  fill="#c4bfb8"/>
+            <rect x="360" y="127" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="370" y="127" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="360" y="140" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="370" y="140" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="360" y="153" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="370" y="153" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <!-- RIGHT cluster tall -->
+          <g class="building">
+            <rect x="387" y="82"  width="54" height="98" fill="#aca8a1"/>
+            <rect x="393" y="66"  width="42" height="18" fill="#aca8a1"/>
+            <rect x="399" y="52"  width="30" height="16" fill="#aca8a1"/>
+            <rect x="406" y="40"  width="16" height="14" fill="#aca8a1"/>
+            <rect x="411" y="28"  width="6"  height="14" fill="#aca8a1"/>
+            <rect x="413" y="15"  width="2"  height="15" fill="#aca8a1"/>
+            <rect x="394" y="92"  width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="408" y="92"  width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="422" y="92"  width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="394" y="108" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="408" y="108" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="422" y="108" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="394" y="124" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="408" y="124" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="422" y="124" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="394" y="140" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="408" y="140" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="422" y="140" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="394" y="155" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="408" y="155" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="422" y="155" width="9"  height="9"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="449" y="100" width="36" height="80" fill="#b8b3ac"/>
+            <rect x="454" y="90"  width="26" height="12" fill="#b8b3ac"/>
+            <rect x="459" y="80"  width="16" height="12" fill="#b8b3ac"/>
+            <rect x="463" y="71"  width="8"  height="11" fill="#b8b3ac"/>
+            <rect x="465" y="62"  width="4"  height="11" fill="#b8b3ac"/>
+            <rect x="455" y="110" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="468" y="110" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="455" y="125" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="468" y="125" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="455" y="140" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="468" y="140" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="455" y="155" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="468" y="155" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="493" y="114" width="28" height="66" fill="#c2bdb6"/>
+            <rect x="497" y="108" width="20" height="8"  fill="#c2bdb6"/>
+            <rect x="498" y="123" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="509" y="123" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="498" y="137" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="509" y="137" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="498" y="151" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="509" y="151" width="7"  height="7"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="529" y="94"  width="44" height="86" fill="#b4afa8"/>
+            <rect x="535" y="80"  width="32" height="16" fill="#b4afa8"/>
+            <rect x="541" y="67"  width="20" height="15" fill="#b4afa8"/>
+            <rect x="546" y="56"  width="10" height="13" fill="#b4afa8"/>
+            <rect x="549" y="44"  width="4"  height="14" fill="#b4afa8"/>
+            <rect x="535" y="104" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="548" y="104" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="561" y="104" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="535" y="119" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="548" y="119" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="561" y="119" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="535" y="134" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="548" y="134" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="561" y="134" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="535" y="149" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="548" y="149" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="561" y="149" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="535" y="163" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="548" y="163" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="561" y="163" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="581" y="116" width="24" height="64" fill="#c8c3bc"/>
+            <rect x="585" y="110" width="16" height="8"  fill="#c8c3bc"/>
+            <rect x="586" y="125" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="596" y="125" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="586" y="138" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="596" y="138" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="586" y="151" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="596" y="151" width="6"  height="6"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <g class="building">
+            <rect x="613" y="106" width="36" height="74" fill="#bdb8b1"/>
+            <rect x="618" y="96"  width="26" height="12" fill="#bdb8b1"/>
+            <rect x="623" y="86"  width="16" height="12" fill="#bdb8b1"/>
+            <rect x="627" y="77"  width="8"  height="11" fill="#bdb8b1"/>
+            <rect x="629" y="67"  width="4"  height="12" fill="#bdb8b1"/>
+            <rect x="619" y="116" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="632" y="116" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="619" y="131" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="632" y="131" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="619" y="146" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="632" y="146" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="619" y="161" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+            <rect x="632" y="161" width="8"  height="8"  fill="#f7f5f2" opacity="0.5"/>
+          </g>
+
+          <!-- Ground line -->
+          <rect x="0" y="179" width="680" height="1" fill="#ccc8c2"/>
+
+        </svg>
+      </div>
+
+      <h1>Hi, I'm Dmitriy!</h1>
+
+      <div class="bio">
+        <p>
+          I'm currently in school at <a href="#">De La Salle High School</a>.
+          My interests lie in computer science, software engineering, business, and finance,
+          especially where technology and business strategy intersect.
+        </p>
+      
+        <p>
+          I build independent projects focused on data analysis, software development,
+          and building real-world tools that turn data into useful insights and products.
+        </p>
+      
+        <p>
+          My work combines technical development with business thinking; creating
+          dashboards, financial tools, and interactive applications while learning how
+          technology can scale companies and products.
+        </p>
+      </div>
+
+      <div class="social">
+        <a href="mailto:dmitryoran@gmail.com">Email</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/dmiorange">GitHub</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/dmitriy-oranskiy-583b57325/">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="https://www.instagram.com/dmitriy.idk">Instagram</a>
+        <span class="dot">·</span>
+      </div>
+
+    </div>
+
+    <!-- ══ Projects ══ -->
+    <div id="projects" class="page">
+
+      <div class="projects-header">
+        <h2>Projects</h2>
+        <p>Projects I've worked on.</p>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="projects-item">
+          <span class="projects-date">Oct 2025</span>
+          <div class="projects-right">
+            <span class="projects-title">Asteroids</span>
+            <span class="projects-desc">
+              A retro arcade-style shooter built in Python with Pygame where you
+              dodge enemies, fire projectiles, and try to survive as long as possible.
+            </span>
+            <span class="projects-meta">
+              Python · Pygame ·
+              <a href="https://github.com/dmiorange/asteroids-game">View code</a>
+            </span>
+          </div>
         </div>
-        <div class="divider"></div>
-        <div class="links">
-            My portfolio is under construction — while that’s happening,<br>
-            you can find me on <a href="https://github.com/dmiorange">GitHub</a>, or say hello
-            <a href="mailto:dmitryoran@gmail.com">Email Me!</a>.
+
+        <div class="projects-item">
+          <span class="projects-date">Nov 2025</span>
+          <div class="projects-right">
+            <span class="projects-title">Porsche Data Dashboard</span>
+            <span class="projects-desc">
+              A data dashboard that pulls together Porsche-related data and visualizes
+              it with charts and stats to surface trends and interesting insights.
+            </span>
+            <span class="projects-meta">
+              Python · data analysis · dashboards ·
+              <a href="https://github.com/dmiorange/Porsche-Data-Dashboard">View code</a>
+            </span>
+          </div>
         </div>
+
+        <div class="projects-item">
+          <span class="projects-date">Feb 2026</span>
+          <div class="projects-right">
+            <span class="projects-title">Expense Tracker</span>
+            <span class="projects-desc">
+              A simple budgeting app for logging expenses and seeing where money
+              goes over time using summaries and basic breakdowns.
+            </span>
+            <span class="projects-meta">
+              HTML · CSS · JavaScript ·
+              <a href="https://dmiorange.github.io/expense-tracker-csp/">View live</a> ·
+              <a href="https://github.com/dmiorange/expense-tracker-csp">View code</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="projects-item">
+          <span class="projects-date">Mar 2026</span>
+          <div class="projects-right">
+            <span class="projects-title">Edwardthepilot Website</span>
+            <span class="projects-desc">
+              A Website for a Flightsim Twitch Steamer and Commerical Pilot
+            </span>
+            <span class="projects-meta">
+              HTML · CSS · JavaScript ·
+              <a href="https://edwardthepilot.com/">View live</a> ·
+              <a href="https://github.com/dmiorange/edwardthepilot">View code</a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ══ WRITINGS ══ -->
+    <div id="writings" class="page">
+
+      <div class="writings-header">
+        <h2>Writings</h2>
+        <p>Essays and notes on what I'm learning.</p>
+      </div>
+
+      <div class="writings-list">
+
+        <div class="writing-item">
+          <span class="writing-date">2025</span>
+          <div class="writing-right">
+            <a href="#" class="writing-title js-page-link" data-page="writing-small-tools" data-section="writings">What Building Small Projects Teaches Me</a>
+            <span class="writing-desc">
+              Reflections on why shipping many small, focused projects has been the
+              most effective way for me to develop as a programmer and problem solver.
+            </span>
+          </div>
+        </div>
+
+        <div class="writing-item">
+          <span class="writing-date">2025</span>
+          <div class="writing-right">
+            <a href="#" class="writing-title js-page-link" data-page="writing-car-data" data-section="writings">What I Learned From Building a Porsche Data Analyzer</a>
+            <span class="writing-desc">
+              Lessons from designing and coding a dashboard that turns raw Porsche
+              data into charts, statistics, and insights you can actually act on.
+            </span>
+          </div>
+        </div>
+
+        <div class="writing-item">
+          <span class="writing-date">2026</span>
+          <div class="writing-right">
+            <a href="#" class="writing-title js-page-link" data-page="writing-finance-code" data-section="writings">Building Tools to Understand Personal Finance</a>
+            <span class="writing-desc">
+              How building budgeting and expense-tracking tools has given me a more
+              concrete understanding of cash flow, saving, and financial habits.
+            </span>
+          </div>
+        </div>
+
+        <div class="writing-item">
+          <span class="writing-date">2026</span>
+          <div class="writing-right">
+            <a href="#" class="writing-title js-page-link" data-page="writing-ml-cyber" data-section="writings">Planning Machine Learning & Cybersecurity Projects</a>
+            <span class="writing-desc">
+              A roadmap of the cybersecurity projects I want to build—from intrusion
+              detection to encrypted chat—and how I plan to approach them using Python and ML.
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ══ WRITING DETAIL: SMALL TOOLS ══ -->
+    <div id="writing-small-tools" class="page writing-detail">
+      <div class="writing-detail-header">
+        <span class="writing-detail-kicker">Writings · 2025</span>
+        <h2>What Building Small Projects Teaches Me</h2>
+      </div>
+      <div class="writing-detail-body">
+        <p>
+          Working on small projects has been the most efficient way for me to grow
+          as a developer. The scope is limited enough that I can ship something in
+          days instead of months, but still real enough that someone (even if it's
+          just me) will actually use it.
+        </p>
+        <p>
+          Each small project forces me to practice the entire lifecycle: defining
+          the problem, designing a minimal interface, implementing the core logic,
+          and then iterating when real data or users expose rough edges. I get to
+          practice version control, debugging, and documentation on a manageable
+          codebase instead of something overwhelming.
+        </p>
+        <p>
+          Over time, these projects add up to a portfolio of focused experiments.
+          Some grow into more polished tools, others get rewritten or retired, but
+          all of them teach me something about how to design clearer APIs, write
+          more reliable code, and ship software that feels intentional rather than
+          accidental.
+        </p>
+      </div>
+      <div class="writing-detail-back">
+        <a href="#" class="writing-back-link js-page-link" data-page="writings" data-section="writings">← Back to writings</a>
       </div>
     </div>
-  </div>
+
+    <!-- ══ WRITING DETAIL: CAR DATA ══ -->
+    <div id="writing-car-data" class="page writing-detail">
+      <div class="writing-detail-header">
+        <span class="writing-detail-kicker">Writings · 2025</span>
+        <h2>What I Learned From Building a Porsche Data Analyzer</h2>
+      </div>
+      <div class="writing-detail-body">
+        <p>
+          Building a Porsche data analyzer taught me how much insight you can unlock
+          once raw data is structured and visualized. Instead of looking at cars
+          one at a time, you start to see patterns: which models hold their value,
+          which configurations are rare, and how preferences change over time.
+        </p>
+        <p>
+          Implementing the dashboard forced me to think carefully about data
+          cleaning, feature selection, and the best way to present information so
+          that it is immediately readable. Even simple visualizations and summary
+          statistics can be powerful if they are focused on the right questions:
+          pricing trends, mileage impact, or how specific options influence value.
+        </p>
+        <p>
+          The most valuable outcome was not just the charts themselves, but the
+          intuition they helped build. Instead of relying on guesses or opinions,
+          you can use real numbers to support or challenge assumptions, and that
+          mindset carries over into how I now approach other projects and datasets.
+        </p>
+      </div>
+      <div class="writing-detail-back">
+        <a href="#" class="writing-back-link js-page-link" data-page="writings" data-section="writings">← Back to writings</a>
+      </div>
+    </div>
+
+    <!-- ══ WRITING DETAIL: FINANCE & CODE ══ -->
+    <div id="writing-finance-code" class="page writing-detail">
+      <div class="writing-detail-header">
+        <span class="writing-detail-kicker">Writings · 2026</span>
+        <h2>Building Tools to Understand Personal Finance</h2>
+      </div>
+      <div class="writing-detail-body">
+        <p>
+          Reading about budgeting, saving, or cash flow is useful, but building
+          tools around those ideas makes them much more concrete. Writing code to
+          track real transactions forces you to define categories, edge cases, and
+          what "good" financial habits actually look like in data.
+        </p>
+        <p>
+          Projects like my expense tracker start with a simple goal—log expenses
+          and see where money goes—but they quickly become a lesson in both finance
+          and software design. I have to think about recurring costs, one-time
+          purchases, and how to surface the right information in summaries or
+          charts so it is easy to understand at a glance.
+        </p>
+        <p>
+          The result is that abstract ideas like saving rate, cash flow, or
+          spending patterns stop being purely theoretical. They show up as data
+          points, trends, and visualizations that are hard to ignore, and that
+          makes them much easier to reason about and improve over time.
+        </p>
+      </div>
+      <div class="writing-detail-back">
+        <a href="#" class="writing-back-link js-page-link" data-page="writings" data-section="writings">← Back to writings</a>
+      </div>
+    </div>
+
+    <!-- ══ WRITING DETAIL: ML & CYBERSECURITY ══ -->
+    <div id="writing-ml-cyber" class="page writing-detail">
+      <div class="writing-detail-header">
+        <span class="writing-detail-kicker">Writings · 2026</span>
+        <h2>Planning Machine Learning & Cybersecurity Projects</h2>
+      </div>
+      <div class="writing-detail-body">
+        <p>
+          As I start AP Cybersecurity, I'm especially interested in projects that
+          combine security concepts with real engineering and machine learning.
+          Not every idea has the same impact, so I have been prioritizing the ones
+          that would teach me the most about networks, encryption, and AI.
+        </p>
+        <p>
+          At the top of my list is a <strong>Network Intrusion Detection Dashboard</strong>.
+          The goal is to collect and parse network traffic or logs, extract features,
+          and flag unusual activity in real time. A first version could focus on
+          Python tooling (for example, using libraries for packet capture and
+          parsing) plus a web dashboard built with a lightweight framework and a
+          charting library. I estimate a focused first version would take around
+          4–6 weeks of part‑time work, including time to research datasets and
+          evaluate simple anomaly‑detection models.
+        </p>
+        <p>
+          Closely related is an <strong>AI Cyber Defense / Anomaly Detection Tool</strong>.
+          While the dashboard focuses on visualization, this project would go deeper
+          into modeling: using Python, NumPy, pandas, and a machine‑learning
+          library to train models that learn what “normal” behavior looks like and
+          highlight deviations. Even with relatively simple algorithms, this would
+          push me to think carefully about data labeling, false positives, and how
+          to evaluate security models, which I expect would take another 4–6 weeks
+          for a solid prototype.
+        </p>
+        <p>
+          I am also interested in an <strong>Encrypted Messaging App</strong> (a small
+          cryptography‑focused chat application). This would be built in Python
+          with a proper cryptography library, and would teach me about key
+          exchange, message authentication, and safe storage of secrets. Even a
+          simple text‑only app with a basic interface could demonstrate end‑to‑end
+          encryption principles. I expect a minimal but secure version would take
+          roughly 3–5 weeks, depending on how polished the user interface becomes.
+        </p>
+        <p>
+          Other ideas—like vulnerability scanners, security log analyzers, or
+          phishing detectors—are still on my list, but they rank slightly lower
+          because they tend to be more common starter projects or focus on a
+          narrower slice of the problem. By starting with network intrusion
+          detection, ML‑based anomaly detection, and encrypted messaging, I can
+          build a foundation that combines cybersecurity theory with practical
+          software engineering and data‑driven problem solving.
+        </p>
+      </div>
+      <div class="writing-detail-back">
+        <a href="#" class="writing-back-link js-page-link" data-page="writings" data-section="writings">← Back to writings</a>
+      </div>
+    </div>
+
+    <!-- ══ CONTACT PAGE ══ -->
+    <div id="contact" class="page">
+      <div class="contact-page">
+        <div class="contact-page-header">
+          <h2>Contact</h2>
+          <p>
+            The easiest way to reach me is by email. I'm open to talking about projects,
+            internships, or anything related to what I'm building and learning.
+          </p>
+        </div>
+        <a href="mailto:dmitryoran@gmail.com" class="contact-button">Email me</a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
